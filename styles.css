@@ -70,8 +70,10 @@ div.loader {
 	background-color: green;
 }
 .slide-photo {
-	object-position: 50% 50%;
+	object-position: center;
 	object-fit: cover;
+	width: 100vw;
+	height: 100vh;
 	position: fixed;
 	opacity: 0;
   transition-property: opacity;
