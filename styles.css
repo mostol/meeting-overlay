@@ -1,0 +1,86 @@
+html, body {
+	font-family: "Open Sans", Arial, sans-serif;
+}
+body {
+	position: relative;
+	overflow: hidden;
+	margin: 0 0;
+}
+h1, h2, h3, h4, h5, h6, span {
+	margin: 0px;
+	color: white;
+}
+.title {
+	font-weight: 900;
+	font-size: 7.2vh;
+}
+.title::after {
+	content: var(--title);
+}
+.midtitle {
+	font-weight: 700;
+	font-size: 6.4vh;
+}
+.midtitle::after {
+	content: var(--midtitle);
+}
+.subtitle {
+	font-weight: 300;
+	font-size: 3.6vh;
+}
+.subtitle::after {
+	content: var(--subtitle);
+}
+.hymn {
+	font-weight: 400;
+	font-size: 6.4vh;
+}
+.hymn::after {
+	content: open-quote var(--hymn) "," close-quote " Hymn #" var(--hymn-number);
+}
+div.darken {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	/*display: var(--darken, none);*/
+	background-color: rgba(0,0,0,0.81);
+}
+div.centered {
+	position: fixed;
+	width: 100vw;
+	height: 100vh;
+	background-image: linear-gradient(transparent 30%, rgba(0,0,0,0.4));
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+div.connection-warning {
+	position: fixed;
+	bottom: 0px;
+	right: 0px;
+	visibility: visible;
+	font-size: 32px;
+}
+div.loader-container {
+	display: inline-text;
+	width: 1.2em;
+}
+div.loader {
+	padding-bottom: 50%;
+	background-color: green;
+}
+.slide-photo {
+	object-position: 50% 50%;
+	object-fit: cover;
+	position: fixed;
+	opacity: 0;
+  transition-property: opacity;
+	transition-duration: 5s;
+}
+
+img.selected {
+	visibility: visible;
+	opacity: 1;
+  transition: 4s ease-out;
+}
