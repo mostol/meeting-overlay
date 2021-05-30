@@ -86,9 +86,10 @@ function launchFullScreen(element) {
   }
 }
 
+const body = document.getElementById('body');
 // Launch fullscreen for browsers that support it!
-launchFullScreen(document.documentElement); // the whole page
-//launchFullScreen(document.getElementById("videoElement"));
+//launchFullScreen(document.documentElement); // the whole page
+//launchFullScreen(body);
 
 autoRedirect(REDIRECTS);
 fillTextFields();
