@@ -10,7 +10,7 @@ const REDIRECTS = [
 		input: 'sacrament',
 		content: {
 			title: 'Foothills Ward Sacrament Meeting',
-			subtitle: 'The stream will resum shortly, after the sacrament is administered.'
+			subtitle: 'The stream will resume shortly, after the sacrament is administered.'
 		}
 	}
 ]
